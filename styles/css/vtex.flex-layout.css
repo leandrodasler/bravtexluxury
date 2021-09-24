@@ -2,7 +2,9 @@
 .flexCol--header-logo {
   justify-content: center;
 }
-
+.flexRow--category-menu-header {
+	margin-bottom: 30px;
+}
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;

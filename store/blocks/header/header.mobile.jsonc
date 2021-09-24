@@ -1,6 +1,6 @@
 {
   "header-layout.mobile": {
-    "children": ["sticky-layout#header-mobile", "flex-layout.row#header-search"]
+    "children": ["sticky-layout#header-mobile"/*, "flex-layout.row#header-search"*/]
   },
   "sticky-layout#header-mobile": {
     "props": {
@@ -19,7 +19,7 @@
     "props": {
       "blockClass": "header-content"
     },
-    "children": ["drawer#header", "flex-layout.col#logo-desktop", "flex-layout.row#actions-header"]
+    "children": ["drawer#header", "flex-layout.col#logo-desktop"]
   },
   "flex-layout.row#header-search": {
     "props": {
@@ -39,6 +39,6 @@
     "props": {
       "blockClass": "header-drawer"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": ["vtex.menu@2.x:menu#category-menu", "flex-layout.row#actions-header"]
   }
 }

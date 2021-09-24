@@ -4,6 +4,7 @@
 :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer) {
   transition: all 0.3s ease;
   display: block;
+  margin: 0 auto;
 }
 
 /* desktop/mobile main header padding and background transitions */
@@ -37,23 +38,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 0 24px;
-}
-
-@media (min-width: 1026px) {
-  :global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(2n) {
-    margin: 0 40px;
-  }
 }
 
 @media (max-width: 550px) {
   :global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(2n) {
     margin: 0;
-  }
-
-  :global(.vtex-flex-layout-0-x-flexCol--header-content)
-    :global(.vtex-menu-2-x-styledLinkContainer--wishlist-custom) {
-    margin: -2px 14px 0 10px !important;
   }
 }
 
@@ -61,15 +50,10 @@
   padding-top: 20px;
 }
 
-:global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(3n) {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 :global(.vtex-flex-layout-0-x-flexRowContent--header-actions) {
   display: flex;
-  column-gap: 1.3rem;
+  column-gap: 2.3rem;
+  height: 100%;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-content)
@@ -111,11 +95,7 @@
   :global(.vtex-menu-2-x-menuItem--wishlist-custom) {
   display: flex;
   align-items: center;
-}
-
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-menu-2-x-styledLinkContainer--wishlist-custom) {
-  margin: -2px 24px 0;
+  height: 100%;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-content)
@@ -123,6 +103,7 @@
   width: 30px;
   height: 30px;
   color: #142032;
+  margin: 0;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-content)
@@ -149,16 +130,12 @@
 :global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-login-2-x-profileIcon) {
   width: 24px;
   height: 24px;
-  margin-right: 8px;
   color: #142032;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-login-2-x-label) {
-  font-size: 14px;
   color: #142032;
-  text-align: left;
   text-transform: none;
-  width: 112px;
   padding: 0;
   line-height: 22px;
 }
@@ -176,6 +153,8 @@
   margin-left: 0;
   padding-left: 0;
   margin-top: 8px;
+  height: 20px;
+  display: block;
   text-transform: none;
 }
 

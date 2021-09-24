@@ -1,11 +1,12 @@
 {
   "search-bar#header": {
-    "blocks": ["autocomplete-result-list.v2"],
+    // "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "blockClass": "search-bar-header",
-      "openAutocompleteOnFocus": true,
-      "placeholder": "Pesquise por produtos ou marca...",
-      "maxWidth": 700
+      "openAutocompleteOnFocus": false,
+      "placeholder": "Pesquise na loja...",
+      "maxWidth": "90%",
+      "autoFocus": true
     }
   },
   "autocomplete-result-list.v2": {

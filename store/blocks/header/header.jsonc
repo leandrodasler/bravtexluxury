@@ -27,7 +27,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "search-bar#header",
+      //"search-bar#header",
       "flex-layout.row#actions-header"
     ]
   },
@@ -47,7 +47,41 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
     },
-    "children": ["minicart.v2", "menu-item#wish-list", "login"]
+    "children": ["overlay-trigger#search", "minicart.v2", "menu-item#wish-list", "login"]
+  },
+  "overlay-trigger#search": {
+    "children": ["menu-item#search", "overlay-layout#search"]
+  },
+  "overlay-layout#search": {
+    "props": {
+      "placement": "bottom",
+      "showArrow": true,
+      "scrollBehavior": "close-on-scroll",
+      "backdrop": "visible"
+    },
+    "children": ["search-bar#header"]
+  },
+  "menu-item#search": {
+    "props": {
+      "blockClass": "wishlist-custom",
+      "id": "menu-item-top-search",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Clique para pesquisar por produtos ou marcas"
+      },
+      "iconProps": {
+        "id": "hpa-search",
+        "size": 32,
+        "viewBox": "-3 -4 24 24",
+        "activeClassName": "search-active",
+        "mutedClassName": "search-muted"
+      },
+      "iconToTheLeft": true
+    }
   },
   "menu-item#wish-list": {
     "props": {
@@ -78,7 +112,7 @@
       "emailPlaceholder": "e-mail",
       "passwordPlaceholder": "senha",
       "showPasswordVerificationIntoTooltip": true,
-      "iconLabel": "Entre ou Cadastre-se",
+      "iconLabel": "Minha conta",
       "showIconProfile": true,
       "hideIconLabel": false
     }

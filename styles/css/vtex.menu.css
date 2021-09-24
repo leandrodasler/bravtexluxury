@@ -5,9 +5,6 @@
   color: #142032;
   max-width: 90px;
 }
-.styledLinkIcon--wishlist-custom {
-  margin-right: 8px;
-}
 .menuItem--shelfLink {
   align-self: center;
 }
@@ -75,11 +72,9 @@
   	max-height: 39px;
 	width: 100%;
 }
-.styledLinkContainer--wishlist-custom {
-  margin: 0 9px;
-}
-.styledLinkContainer--category-menu {
-  margin: 0 39px;
+.styledLinkContainer--wishlist-custom,
+.styledLinkContainer--header-menu {
+  margin: 0;
 }
 .styledLinkContent--top-instagram,
 .styledLinkContent--top-facebook,
