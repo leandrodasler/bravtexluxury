@@ -1,0 +1,80 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "blockClass": "header-menu",
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-category-aneis",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000161",
+          "itemProps": {
+            "href": "#",
+            "text": "Anéis"
+          }
+        },
+        {
+          "id": "menu-item-category-brincos",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000255",
+          "itemProps": {
+            "href": "#",
+            "text": "Brincos"
+          }
+        },
+        {
+          "id": "menu-item-category-relogios",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000631",
+          "itemProps": {
+            "href": "#",
+            "text": "Relógios"
+          }
+        },
+        {
+          "id": "menu-item-category-luxcollect",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000334",
+          "itemProps": {
+            "href": "#",
+            "text": "Luxcollect"
+          }
+        },
+        {
+          "id": "menu-item-category-noivos",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000370",
+          "itemProps": {
+            "href": "#",
+            "text": "Noivos"
+          }
+        },
+        {
+          "id": "menu-item-category-decoracao",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000435",
+          "itemProps": {
+            "href": "#",
+            "text": "Decoração"
+          }
+        },
+        {
+          "id": "menu-item-category-lancamentos",
+          "type": "custom",
+          "blockClass": "category-menu",
+          // "categoryId": "1000435",
+          "itemProps": {
+            "href": "#",
+            "text": "Lançamentos"
+          }
+        }
+      ]
+    }
+  }
+}

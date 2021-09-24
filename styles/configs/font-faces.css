@@ -1,0 +1,40 @@
+/* open-sans-300 - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/open-sans-v25-latin-300.woff2'),
+       url('assets/fonts/open-sans-v25-latin-300.ttf');
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/open-sans-v25-latin-regular.woff2'),
+       url('assets/fonts/open-sans-v25-latin-regular.ttf');
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/open-sans-v25-latin-600.woff2'),
+       url('assets/fonts/open-sans-v25-latin-600.ttf');
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/open-sans-v25-latin-700.woff2'),
+       url('assets/fonts/open-sans-v25-latin-700.ttf');
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: 800;
+  src: url('assets/fonts/open-sans-v25-latin-800.woff2'),
+       url('assets/fonts/open-sans-v25-latin-800.ttf');
+}
