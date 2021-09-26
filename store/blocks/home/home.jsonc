@@ -2,9 +2,13 @@
   "store.home": {
     "blocks": [
       "flex-layout.row#home-banner01",
-      "flex-layout.row#shelf-title",
-      "flex-layout.row#shelf",
-      "flex-layout.row#info-cards",
+      "flex-layout.row#releases-title",
+      "flex-layout.row#releases-shelf",
+      "flex-layout.row#collections-title",
+      "flex-layout.row#collections-cards",
+      "flex-layout.row#selected-items-title",
+      "flex-layout.row#selected-items-cards",
+      "flex-layout.row#view-by-category-title",
       "flex-layout.row#home-banner02"
     ]
   },
@@ -30,6 +34,175 @@
       }
     }
   },
+  "flex-layout.row#releases-title": {
+    "children": ["rich-text#releases-title"],
+    "title": "Home - Lançamentos - Título",
+    "props": {
+      "marginTop": 6
+    }
+  },
+  "rich-text#releases-title": {
+    "props": {
+      "text": "## Lançamentos",
+      "textAlignment": "CENTER",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#releases-shelf": {
+    "children": ["list-context.product-list#releases-shelf"],
+    "title": "Home - Lançamentos - Produtos"
+  },
+  "list-context.product-list#releases-shelf": {
+    "blocks": ["product-summary.shelf#only-image"],
+    "children": ["slider-layout"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 4
+    }
+  },
+  "product-summary.shelf#only-image": {
+    "children": ["product-summary-image"]
+  },
+  "flex-layout.row#collections-title": {
+    "children": ["rich-text#collections-title"],
+    "title": "Home - Coleções - Título"
+  },
+  "rich-text#collections-title": {
+    "props": {
+      "text": "## Coleções",
+      "textAlignment": "CENTER",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#collections-cards": {
+    "children": [
+      "flex-layout.col#collections-card-1",
+      "flex-layout.col#collections-card-2",
+      "flex-layout.col#collections-card-3"
+    ],
+    "props": {
+      "colGap": 10,
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "marginTop": 6,
+      "marginBottom": 9
+    },
+    "title": "Home - Coleções - Cards"
+  },
+  "flex-layout.col#collections-card-1": {
+    "children": ["image#collection-card-1"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#collections-card-2": {
+    "children": ["image#collection-card-2"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#collections-card-3": {
+    "children": ["image#collection-card-3"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#collection-card-1": {
+    "props": {
+      "src": "assets/img/collection-1.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#collection-card-2": {
+    "props": {
+      "src": "assets/img/collection-2.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#collection-card-3": {
+    "props": {
+      "src": "assets/img/collection-3.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "flex-layout.row#selected-items-title": {
+    "children": ["rich-text#selected-items-title"],
+    "title": "Home - Itens Selecionados - Título"
+  },
+  "rich-text#selected-items-title": {
+    "props": {
+      "text": "## Itens Selecionados",
+      "textAlignment": "CENTER",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#selected-items-cards": {
+    "children": [
+      "flex-layout.col#selected-items-card-1",
+      "flex-layout.col#selected-items-card-2"
+    ],
+    "props": {
+      "colGap": 10,
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "marginTop": 6,
+      "marginBottom": 9
+    },
+    "title": "Home - Itens Selecionados - Cards"
+  },
+  "flex-layout.col#selected-items-card-1": {
+    "children": ["image#selected-items-card-1"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#selected-items-card-2": {
+    "children": ["image#selected-items-card-2"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#selected-items-card-1": {
+    "props": {
+      "src": "assets/img/selected-items-1.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "image#selected-items-card-2": {
+    "props": {
+      "src": "assets/img/selected-items-2.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "flex-layout.row#view-by-category-title": {
+    "children": ["rich-text#view-by-category-title"],
+    "title": "Home - Ver por Categoria - Título"
+  },
+  "rich-text#view-by-category-title": {
+    "props": {
+      "text": "## Ver por categoria",
+      "textAlignment": "CENTER",
+      "blockClass": "shelfTitle"
+    }
+  },
   "flex-layout.row#home-banner02": {
     "props": {
       "horizontalAlign": "center",
@@ -49,53 +222,6 @@
       "link": {
         "url": "#"
       }
-    }
-  },
-  "flex-layout.row#shelf-title": {
-    "children": ["rich-text#shelf-title"],
-    "props": {
-			"blockClass": ["shelf-title"]
-		},
-		"title": "Home - Prateleira 1 - Título"
-  },
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Lançamentos",
-      "textAlignment": "CENTER",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "flex-layout.row#shelf": {
-    "children": [/*"list-context.product-list#demo1"*/],
-    "title": "Home - Prateleira 1"
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf#demo1"],
-    "children": ["slider-layout#demo-products1"],
-    "props": {
-      // "category": "1000435" /* categoria Cachorros */,
-      // "category": "1000255" /* categoria Gatos */,
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "product-summary.shelf#demo1": {
-    "children": [
-      "product-summary-image",
-      "product-summary-name",
-      "product-summary-price"
-    ]
-  },
-  "slider-layout#demo-products1": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 1
-      },
-      "showPaginationDots": "never",
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
     }
   }
 }

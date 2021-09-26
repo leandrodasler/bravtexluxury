@@ -57,7 +57,7 @@
 		}
 	},
 	"flex-layout.col#stack": {
-		"children": ["stack-layout", "flex-layout.col#dropdown", "flex-layout.row#title-shelf-pdp-1", "flex-layout.row#shelf3"],
+		"children": ["stack-layout", "flex-layout.col#dropdown"/*, "flex-layout.row#title-shelf-pdp-1", "flex-layout.row#shelf3"*/],
 		"props": {
 			"rowGap": 0,
 			"blockClass": "product-images-container"
