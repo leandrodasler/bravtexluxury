@@ -6,9 +6,10 @@
       "flex-layout.row#releases-shelf",
       "flex-layout.row#collections-title",
       "flex-layout.row#collections-cards",
-      "flex-layout.row#selected-items-title",
-      "flex-layout.row#selected-items-cards",
-      "flex-layout.row#view-by-category-title",
+      // "flex-layout.row#selected-items-title",
+      // "flex-layout.row#selected-items-cards",
+      // "flex-layout.row#view-by-category-title",
+      // "flex-layout.row#view-by-category-cards",
       "flex-layout.row#home-banner02"
     ]
   },
@@ -82,7 +83,7 @@
     ],
     "props": {
       "colGap": 10,
-      "fullWidth": true,
+      "fullWidth": false,
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "marginTop": 6,
@@ -137,11 +138,11 @@
   },
   "flex-layout.row#selected-items-title": {
     "children": ["rich-text#selected-items-title"],
-    "title": "Home - Itens Selecionados - Título"
+    "title": "Home - Itens selecionados - Título"
   },
   "rich-text#selected-items-title": {
     "props": {
-      "text": "## Itens Selecionados",
+      "text": "## Itens selecionados",
       "textAlignment": "CENTER",
       "blockClass": "shelfTitle"
     }
@@ -152,24 +153,24 @@
       "flex-layout.col#selected-items-card-2"
     ],
     "props": {
-      "colGap": 10,
-      "fullWidth": true,
+      "colGap": 11,
+      "fullWidth": false,
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "marginTop": 6,
       "marginBottom": 9
     },
-    "title": "Home - Itens Selecionados - Cards"
+    "title": "Home - Itens selecionados - Cards"
   },
   "flex-layout.col#selected-items-card-1": {
-    "children": ["image#selected-items-card-1"],
+    "children": ["image#selected-items-card-1", "rich-text#selected-items-card-1"],
     "props": {
       "horizontalAlign": "center"
     }
   },
   "flex-layout.col#selected-items-card-2": {
-    "children": ["image#selected-items-card-2"],
+    "children": ["image#selected-items-card-2", "rich-text#selected-items-card-2"],
     "props": {
       "horizontalAlign": "center"
     }
@@ -183,6 +184,12 @@
       }
     }
   },
+  "rich-text#selected-items-card-1": {
+    "props": {
+      "text": "[Presentes para o dia dos namorados](/#)",
+      "textAlignment": "CENTER"
+    }
+  },
   "image#selected-items-card-2": {
     "props": {
       "src": "assets/img/selected-items-2.jpg",
@@ -192,15 +199,167 @@
       }
     }
   },
+  "rich-text#selected-items-card-2": {
+    "props": {
+      "text": "[Presentes para o dia das mães](/#)",
+      "textAlignment": "CENTER"
+    }
+  },
   "flex-layout.row#view-by-category-title": {
     "children": ["rich-text#view-by-category-title"],
-    "title": "Home - Ver por Categoria - Título"
+    "title": "Home - Ver por categoria - Título"
   },
   "rich-text#view-by-category-title": {
     "props": {
       "text": "## Ver por categoria",
       "textAlignment": "CENTER",
       "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#view-by-category-cards": {
+    "children": [
+      "flex-layout.col#view-by-category-card-1",
+      "flex-layout.col#view-by-category-card-2",
+      "flex-layout.col#view-by-category-card-3",
+      "flex-layout.col#view-by-category-card-4",
+      "flex-layout.col#view-by-category-card-5",
+      "flex-layout.col#view-by-category-card-6"
+    ],
+    "props": {
+      "colGap": 8,
+      "fullWidth": false,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "marginTop": 6,
+      "marginBottom": 9
+    },
+    "title": "Home - Ver por categoria - Cards"
+  },
+  "flex-layout.col#view-by-category-card-1": {
+    "children": ["image#view-by-category-card-1", "rich-text#view-by-category-card-1"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#view-by-category-card-2": {
+    "children": ["image#view-by-category-card-2", "rich-text#view-by-category-card-2"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#view-by-category-card-3": {
+    "children": ["image#view-by-category-card-3", "rich-text#view-by-category-card-3"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#view-by-category-card-4": {
+    "children": ["image#view-by-category-card-4", "rich-text#view-by-category-card-4"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#view-by-category-card-5": {
+    "children": ["image#view-by-category-card-5", "rich-text#view-by-category-card-5"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#view-by-category-card-6": {
+    "children": ["image#view-by-category-card-6", "rich-text#view-by-category-card-6"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#view-by-category-card-1": {
+    "props": {
+      "src": "assets/img/category-1.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/aneis"
+      }
+    }
+  },
+  "rich-text#view-by-category-card-1": {
+    "props": {
+      "text": "[ANÉIS](/aneis)",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#view-by-category-card-2": {
+    "props": {
+      "src": "assets/img/category-2.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/brincos"
+      }
+    }
+  },
+  "rich-text#view-by-category-card-2": {
+    "props": {
+      "text": "[BRINCOS](/brincos)",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#view-by-category-card-3": {
+    "props": {
+      "src": "assets/img/category-3.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/relogios"
+      }
+    }
+  },
+  "rich-text#view-by-category-card-3": {
+    "props": {
+      "text": "[RELÓGIOS](/relogios)",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#view-by-category-card-4": {
+    "props": {
+      "src": "assets/img/category-4.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/lux-collect"
+      }
+    }
+  },
+  "rich-text#view-by-category-card-4": {
+    "props": {
+      "text": "[LUX COLLECT](/lux-collect)",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#view-by-category-card-5": {
+    "props": {
+      "src": "assets/img/category-5.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/noivos"
+      }
+    }
+  },
+  "rich-text#view-by-category-card-5": {
+    "props": {
+      "text": "[NOIVOS](/noivos)",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#view-by-category-card-6": {
+    "props": {
+      "src": "assets/img/category-6.jpg",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/decoração"
+      }
+    }
+  },
+  "rich-text#view-by-category-card-6": {
+    "props": {
+      "text": "[DECORAÇÃO](/decoração)",
+      "textAlignment": "CENTER"
     }
   },
   "flex-layout.row#home-banner02": {

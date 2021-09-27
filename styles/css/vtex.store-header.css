@@ -125,6 +125,7 @@
   :global(.vtex-login-2-x-container)
   :global(.vtex-button__label) {
   padding: 0;
+  padding-bottom: 0 !important;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-login-2-x-profileIcon) {

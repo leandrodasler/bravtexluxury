@@ -1,3 +1,7 @@
+.link {
+	text-decoration: none;
+	color: #142032;
+}
 .paragraph--dontmiss, .paragraph--dontmissfidelidade{
 	text-align: center;
 	font-size: 16px;
