@@ -6,14 +6,14 @@
       "flex-layout.row#releases-shelf",
       "flex-layout.row#collections-title",
       "flex-layout.row#collections-cards",
-      // "flex-layout.row#selected-items-title",
-      // "flex-layout.row#selected-items-cards",
-      // "flex-layout.row#view-by-category-title",
-      // "flex-layout.row#view-by-category-cards",
+      "flex-layout.row#selected-items-title",
+      "flex-layout.row#selected-items-cards",
+      "flex-layout.row#view-by-category-title",
+      "flex-layout.row#view-by-category-cards",
+      "flex-layout.row#view-all-button",
       "flex-layout.row#home-banner02"
     ]
   },
-
   "flex-layout.row#home-banner01": {
     "props": {
       "horizontalAlign": "center",
@@ -39,7 +39,7 @@
     "children": ["rich-text#releases-title"],
     "title": "Home - Lançamentos - Título",
     "props": {
-      "marginTop": 6
+      "marginTop": 8
     }
   },
   "rich-text#releases-title": {
@@ -51,7 +51,10 @@
   },
   "flex-layout.row#releases-shelf": {
     "children": ["list-context.product-list#releases-shelf"],
-    "title": "Home - Lançamentos - Produtos"
+    "title": "Home - Lançamentos - Produtos",
+    "props": {
+      "marginBottom": 8
+    }
   },
   "list-context.product-list#releases-shelf": {
     "blocks": ["product-summary.shelf#only-image"],
@@ -232,7 +235,7 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "marginTop": 6,
-      "marginBottom": 9
+      "marginBottom": 7
     },
     "title": "Home - Ver por categoria - Cards"
   },
@@ -360,6 +363,30 @@
     "props": {
       "text": "[DECORAÇÃO](/decoração)",
       "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.row#view-all-button": {
+    "children": ["flex-layout.col#view-all-button"],
+    "props": {
+      "marginBottom": 10
+    },
+    "title": "Home - Ver por categoria - Botão VER TODOS"
+  },
+  "flex-layout.col#view-all-button": {
+    "children": ["link#view-all-button"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "link#view-all-button": {
+    "props": {
+      "blockClass": "view-all-button",
+      "label": "VER TODOS",
+      "href": "#",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      }
     }
   },
   "flex-layout.row#home-banner02": {
