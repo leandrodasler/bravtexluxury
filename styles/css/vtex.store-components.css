@@ -6,10 +6,6 @@
   text-decoration: underline;
 }
 
-.searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  /* max-width: 208px; */
-}
-
 .searchBarContainer :global(.vtex-input-prefix__group) {
   height: 52px;
   border: 1px solid #ccced8;
