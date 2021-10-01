@@ -1,11 +1,11 @@
 {
   "search-bar#header": {
-    // "blocks": ["autocomplete-result-list.v2"],
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
       "blockClass": "search-bar-header",
       "openAutocompleteOnFocus": false,
-      "placeholder": "Pesquise na loja...",
-      "maxWidth": "90%",
+      "placeholder": "Pesquise por produtos ou marca...",
+      "maxWidth": "95%",
       "autoFocus": true
     }
   },
@@ -19,7 +19,7 @@
       "customBreakpoints": {
         "md": {
           "width": 1024,
-          "maxSuggestedProducts": 3
+          "maxSuggestedProducts": 1
         },
         "lg": {
           "width": 1024,

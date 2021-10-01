@@ -59,6 +59,12 @@
       "scrollBehavior": "close-on-scroll",
       "backdrop": "visible"
     },
+    "children": ["flex-layout.row#search-bar"]
+  },
+  "flex-layout.row#search-bar": {
+    "children": ["flex-layout.col#search-bar"]
+  },
+  "flex-layout.col#search-bar": {
     "children": ["search-bar#header"]
   },
   "menu-item#search": {

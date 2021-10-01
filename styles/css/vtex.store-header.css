@@ -4,6 +4,9 @@
 :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer) {
   transition: all 0.3s ease;
   display: block;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
   margin: 0 auto;
 }
 
@@ -188,8 +191,8 @@
 /* SEARCH BAR */
 :global(.vtex-search-2-x-biggy-autocomplete) {
   max-width: 1000px;
-  right: 0;
-  top: 10px;
+  right: 50vw;
+  top: -50px;
   border: 2px solid #e7e9ee;
   box-shadow: 0px 8px 32px rgb(0 0 0 / 3%);
   border-radius: 8px;

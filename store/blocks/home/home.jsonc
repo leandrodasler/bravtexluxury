@@ -382,7 +382,7 @@
     "props": {
       "blockClass": "view-all-button",
       "label": "VER TODOS",
-      "href": "#",
+      "href": "/%20?_q=%20&map=ft",
       "displayMode": "button",
       "buttonProps": {
         "variant": "secondary"

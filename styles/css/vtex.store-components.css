@@ -227,9 +227,6 @@
 :global(.vtex-product-summary-2-x-priceContainer) {
   align-items: flex-start;
 }
-.priceContainer {
-  flex-direction: row;
-}
 .sellingPriceValue {
   color: #142032;
 }
