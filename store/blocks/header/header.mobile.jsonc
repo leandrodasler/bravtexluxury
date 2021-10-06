@@ -39,6 +39,6 @@
     "props": {
       "blockClass": "header-drawer"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu", "flex-layout.row#actions-header"]
+    "children": ["vtex.menu@2.x:menu#category-menu", "flex-layout.row#header-search", "flex-layout.row#actions-header-mobile"]
   }
 }

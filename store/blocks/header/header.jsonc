@@ -49,6 +49,16 @@
     },
     "children": ["overlay-trigger#search", "minicart.v2", "menu-item#wish-list", "login"]
   },
+  "flex-layout.row#actions-header-mobile": {
+    "props": {
+      "blockClass": "header-actions",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["minicart.v2", "menu-item#wish-list", "login"]
+  },
   "overlay-trigger#search": {
     "children": ["menu-item#search", "overlay-layout#search"]
   },

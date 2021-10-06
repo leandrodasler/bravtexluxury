@@ -120,6 +120,20 @@
   margin: 0;
 }
 /*drawer*/
+:global(.vtex-store-drawer-0-x-opened) {
+  overflow: auto;
+}
+:global(.vtex-store-drawer-0-x-childrenContainer) {
+  flex-direction: column;
+}
+:global(.vtex-store-drawer-0-x-childrenContainer) :global(.vtex-login-2-x-profileIcon) {
+  width: 24px;
+  height: 24px;
+  color: #142032;
+}
+:global(.vtex-store-drawer-0-x-childrenContainer) :global(.vtex-minicart-2-x-cartIcon) {
+  color: #142032;
+}
 .menuItem--sub-menu-header,
 .menuContainerNav {
   width: 100%;
@@ -295,10 +309,9 @@
 
 
 @media only screen and (max-width: 1024px) {
-	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) {
-		align-items: flex-start;
-	}
-
+  :global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) {
+    flex-direction: column;
+  }
 	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu {
 		display: flex;
     	align-items: center;
