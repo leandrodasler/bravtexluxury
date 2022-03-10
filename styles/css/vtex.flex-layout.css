@@ -9,6 +9,9 @@
 .flexRowContent--main-header {
   padding: 0;
 }
+.flexRow--demo-store-warning {
+  background-color: #f8f7fc;
+}
 
 @media screen and (min-width: 80rem) {
   .flexRowContent--menu-link,

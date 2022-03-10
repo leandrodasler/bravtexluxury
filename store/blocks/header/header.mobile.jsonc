@@ -1,6 +1,6 @@
 {
   "header-layout.mobile": {
-    "children": ["sticky-layout#header-mobile"/*, "flex-layout.row#header-search"*/]
+    "children": ["flex-layout.row#demo-store-warning", "sticky-layout#header-mobile"/*, "flex-layout.row#header-search"*/]
   },
   "sticky-layout#header-mobile": {
     "props": {
