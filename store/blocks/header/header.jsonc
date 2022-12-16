@@ -49,7 +49,7 @@
     "props": {
       "blockClass": "i18n"
     },
-    "children": ["binding-selector", "locale-switcher"]
+    "children": ["binding-selector"/* , "locale-switcher" */]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
@@ -77,11 +77,11 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
     },
-    "children": ["binding-selector", "locale-switcher", "minicart.v2", "menu-item#wish-list", "login"]
+    "children": ["binding-selector"/* , "locale-switcher" */, "minicart.v2", "menu-item#wish-list", "login"]
   },
   "binding-selector": {
     "props": {
-      "display": "flag"
+      "display": "text"
     }
   },
   "overlay-trigger#search": {
