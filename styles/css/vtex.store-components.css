@@ -152,6 +152,14 @@
   letter-spacing: 0.015em;
 }
 
+:local(html[lang="en-US"]) :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .productImage--pdp-images::after {
+  content: "Purely illustrative image";
+}
+
+:local(html[lang="es-AR"]) :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .productImage--pdp-images::after {
+  content: "Imagen puramente ilustrativa";
+}
+
 .productNameContainer {
   color: #3f3f40;
   font-weight: bold;
