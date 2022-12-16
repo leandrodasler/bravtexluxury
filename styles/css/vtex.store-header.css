@@ -36,7 +36,19 @@
   align-items: center;
 }
 
-:global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(2n) {
+@media (min-width: 64rem) {
+  :global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(2n) {
+    margin-left: 2.5rem;
+    display: flex;
+    align-items: center;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-actions) {
+    column-gap: 0;
+    justify-content: space-between;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(3n) {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -44,7 +56,7 @@
 }
 
 @media (max-width: 550px) {
-  :global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(2n) {
+  :global(.vtex-flex-layout-0-x-flexColChild--header-content):nth-child(3n) {
     margin: 0;
   }
 }
@@ -57,29 +69,20 @@
   justify-content: space-around;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-minicart-2-x-openIconContainer) {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-minicart-2-x-openIconContainer) {
   padding: 0;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-minicart-2-x-minicartContainer)
-  :global(.vtex-button):hover,
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-minicart-2-x-minicartContainer)
-  :global(.vtex-button):focus {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-button):hover,
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-button):focus {
   background-color: transparent;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-minicart-2-x-minicartContainer)
-  :global(.vtex-button__label) {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-button__label) {
   padding: 0;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-minicart-2-x-minicartContainer)
-  :global(.vtex-minicart-2-x-cartIcon) {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-minicart-2-x-minicartContainer) :global(.vtex-minicart-2-x-cartIcon) {
   width: 24px;
   height: 24px;
   color: #142032;
@@ -92,15 +95,13 @@
   color: #142032;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-menu-2-x-menuItem--wishlist-custom) {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-menu-2-x-menuItem--wishlist-custom) {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-menu-2-x-styledLinkIcon--wishlist-custom) {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-menu-2-x-styledLinkIcon--wishlist-custom) {
   width: 30px;
   height: 30px;
   color: #142032;
@@ -113,18 +114,12 @@
   color: #142032;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-login-2-x-container)
-  :global(.vtex-button):hover,
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-login-2-x-container)
-  :global(.vtex-button):focus {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-login-2-x-container) :global(.vtex-button):hover,
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-login-2-x-container) :global(.vtex-button):focus {
   background: transparent;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--header-content)
-  :global(.vtex-login-2-x-container)
-  :global(.vtex-button__label) {
+:global(.vtex-flex-layout-0-x-flexCol--header-content) :global(.vtex-login-2-x-container) :global(.vtex-button__label) {
   padding: 0;
   padding-bottom: 0 !important;
 }
@@ -229,8 +224,7 @@
   padding: 0 12px;
 }
 
-:global(.vtex-search-2-x-biggy-autocomplete)
-  :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
+:global(.vtex-search-2-x-biggy-autocomplete) :global(.vtex-reviews-and-ratings-1-x-inlineContainer) {
   display: none;
 }
 
@@ -257,10 +251,8 @@
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-sticky-layout-0-x-container--sticky-header),
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-sticky-layout-0-x-container--sticky-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -268,8 +260,7 @@
  * remove the extra padding when stuck from the desktop header
  * we add a transition only when "stuck" for the "unstick" step seem faster
  */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
   transition: padding 0.3s ease, background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
@@ -285,12 +276,10 @@
   } */
 
 /* header background when stuck and not hovered */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: #fff;
-    box-shadow: none;
+:global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  background: #fff;
+  box-shadow: none;
 }
 
 /* stick wrapper with the same color as the desktop/mobile header */
@@ -308,8 +297,7 @@
   :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-logoLink),
   :global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer),
   :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
     transition: none;
   }
 }
