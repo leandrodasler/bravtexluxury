@@ -53,19 +53,11 @@
   },
 
   "search-result-layout": {
-    "blocks": [
-      "search-result-layout.desktop",
-      "search-result-layout.mobile",
-      "search-not-found-layout"
-    ]
+    "blocks": ["search-result-layout.desktop", "search-result-layout.mobile", "search-not-found-layout"]
   },
 
   "search-result-layout.desktop": {
-    "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#result"
-    ],
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#searchtitle", "flex-layout.row#banner-one", "flex-layout.row#result"],
     "props": {
       "pagination": "show-more",
       "preventRouteChange": true,
@@ -80,6 +72,20 @@
     "props": {
       "preserveLayoutOnMobile": true,
       "fullWidth": true
+    }
+  },
+  "flex-layout.row#banner-one": {
+    "children": ["search-banner#one"],
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 6
+    }
+  },
+  "search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "myBanner",
+      "horizontalAlignment": "center"
     }
   },
   "flex-layout.row#searchtitle": {
@@ -99,12 +105,7 @@
     }
   },
   "flex-layout.col#content": {
-    "children": [
-      "flex-layout.row#searchinfo",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
-    ],
+    "children": ["flex-layout.row#searchinfo", "flex-layout.row#fetchprevious", "flex-layout.row#products", "flex-layout.row#fetchmore"],
     "props": {
       "width": "grow",
       "preventVerticalStretch": true
@@ -148,6 +149,7 @@
     "children": [
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
+      "flex-layout.row#banner-one",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
@@ -169,11 +171,7 @@
   },
 
   "flex-layout.row#searchinfomobile": {
-    "children": [
-      "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
-      "flex-layout.col#switcherMobile"
-    ],
+    "children": ["flex-layout.col#orderByMobile", "flex-layout.col#filterMobile", "flex-layout.col#switcherMobile"],
     "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
